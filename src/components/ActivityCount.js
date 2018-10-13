@@ -6,15 +6,20 @@ export const ActivityCount = React.createClass({
         return (
             <div className="poker-day-count">
                 <div className="total-days">
-                    <span>5 days</span>
+                    <span>{this.props.total}</span>
+                    <span>days</span>
                 </div>
-                <div className="rain-days">
-                    <span>2 days</span>
+                <div className="rainy-days">
+                    <span>{this.props.rainy}</span>
+                    <span>days</span>
                 </div>
                 <div className="sunny-days">
-                    <span>1 hiking days</span>
+                    <span>{this.props.sunny}</span>
+                    <span>days</span>
                 </div>
-
+                <div>
+                    <span>{this.props.goal}</span>
+                </div>
             </div>
         )
     }

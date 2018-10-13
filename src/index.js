@@ -5,6 +5,9 @@ import { ActivityCount } from './components/ActivityCount'
 window.React = React
 
 render(
-	<ActivityCount />,
+	<ActivityCount total={50}
+		rainy={20}
+		sunny={10}
+		goal={100} />,
 	document.getElementById('react-container')
 )
