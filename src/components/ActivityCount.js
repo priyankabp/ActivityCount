@@ -1,6 +1,5 @@
 import '../stylesheets/ui.scss'
 import { FaUmbrella, FaSun, FaCalendarAlt } from 'react-icons/fa'
-import * as FontAwesome from 'react-icons/fa'
 
 const percentToDecimal = (decimal) => {
     return ((decimal * 100) + '%')
