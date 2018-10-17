@@ -1,5 +1,6 @@
 import { FaUmbrella, FaSun, FaCalendarAlt } from 'react-icons/fa'
 import { ActivityRow } from './ActivityRow'
+import { PropTypes } from 'react'
 
 export const ActivityList = ({ days }) => (
     <table>
@@ -24,3 +25,19 @@ export const ActivityList = ({ days }) => (
         </tbody>
     </table>
 )
+
+ActivityList.PropTypes = {
+    days: function (props) {
+        if (!Array.isArray(props.days)) {
+            return new Error(
+                "SkiDayList should be an array"
+            )
+        } else if (!props.days.length) {
+            return new Error(
+                "Skiday List must have at least one record"
+            )
+        } else {
+            return null
+        }
+    }
+}

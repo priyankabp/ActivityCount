@@ -1,5 +1,5 @@
 import { FaUmbrella, FaSun, FaCalendarAlt } from 'react-icons/fa'
-
+import { PropTypes } from 'react'
 export const ActivityRow = ({ resort, date,
     rainy, sunny }) => (
         <tr>
@@ -18,3 +18,10 @@ export const ActivityRow = ({ resort, date,
         </tr>
 
     )
+
+ActivityRow.prototypes = {
+    resort: PropTypes.string.isRequired,
+    date: PropTypes.instanceOf(Date).isRequired,
+    rainy: PropTypes.bool,
+    sunny: PropTypes.sunny
+}

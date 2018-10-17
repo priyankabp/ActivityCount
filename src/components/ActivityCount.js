@@ -36,3 +36,10 @@ export const ActivityCount = ({ total, rainy, sunny, goal }) => (
         </div>
     </div>
 )
+
+ActivityCount.prototypes = {
+    total: PropTypes.number,
+    rainy: PropTypes.number,
+    sunny: PropTypes.number,
+    goal: PropTypes.number
+}
